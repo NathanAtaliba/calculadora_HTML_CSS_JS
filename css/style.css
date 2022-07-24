@@ -1,9 +1,11 @@
+
 *{
     margin :0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    display: block;
     background-color: red;
     width: 100vh;
     height: 100vh;
@@ -21,6 +23,7 @@ h2{
     height: 50px;
     margin: 0 auto;
     padding-top: 0.5rem;
+    font-size: 2rem;
 }
 .tabela{
     background-color: rgba(0, 0, 0, 0.8);
@@ -31,7 +34,9 @@ h2{
     height: 700px;
     position: relative;
     top:10rem;
-    margin:0 auto;
+    left:70%;
+    
+
 }
 table{
 position: absolute;
@@ -39,6 +44,7 @@ width: 500px;
 height:300px;
 top:10rem;
 left:3rem;
+border-radius: 20px;
 }
 
 table,tr,td{
@@ -48,6 +54,7 @@ table,tr,td{
     font-size: 5rem;    
     text-align: center;  
     border: none;
+    border-radius: 20px;
 }
 .button{
     font-size: 5.5rem;
