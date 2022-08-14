@@ -1,20 +1,26 @@
+var vazio;
 function insert(num){
-    var conteudo =  document.getElementById("res").innerText;
-   document.getElementById("res").innerText = conteudo + num;
+    if(vazio == '1'){
+        window.alert("Apague a calculadora")
+    }
+    else{   
+    var conteudo =  window.document.getElementById("res").innerText;
+    document.getElementById("res").
+    innerText = conteudo + num;
+    }
 }
 function clean(){
     var conteudo =  document.getElementById("res");
 conteudo.innerText= "";
 conteudo.style.textAlign ='right'
+vazio = '0';
 }
 function calculo(){
-    var conteudo =  document.getElementById("res");
-if(conteudo.innerHTML == '+'){
-conteudo.innerHTML= '1';
-}
-else{
-    conteudo.innerHTML = '0';
-}
+    var resultado = window.document.getElementById("res").innerHTML;
+    if(resultado){
+        window.document.getElementById("res").innerHTML = eval(resultado);
+        vazio = '1';
+    }
 
 }
 
